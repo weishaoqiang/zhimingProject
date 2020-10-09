@@ -1,13 +1,12 @@
 <template>
-  <div class="header"></div>
+  <div class="SideNav"></div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
-  data() {},
-  methods: {
-    a() {}
+  name: 'SideNav',
+  data() {
+    return {}
   }
 }
 </script>

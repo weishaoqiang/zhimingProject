@@ -1,12 +1,10 @@
 <template>
-  <div>
-    
-  </div>
+  <div class="MainNav"></div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
+  name: 'MainNav',
   data() {
     return {}
   },
@@ -14,6 +12,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  
-</style>
+<style lang="scss" scoped></style>

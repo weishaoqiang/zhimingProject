@@ -1,14 +1,14 @@
 <template>
-  <div class="header"></div>
+  <div class="footer"></div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
-  data() {},
-  methods: {
-    a() {}
-  }
+  name: 'Footer',
+  data() {
+    return {}
+  },
+  methods: {}
 }
 </script>
 
