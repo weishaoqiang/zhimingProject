@@ -1,4 +1,5 @@
 const glob = require('glob')
+const path = require('path')
 
 function getEntry(url) {
   let entrys = {}
@@ -9,12 +10,17 @@ function getEntry(url) {
       entry: 'src/pages/' + urlArr[1] + '/' + 'index.js',
       template: 'src/pages/' + urlArr[1] + '/' + 'index.html',
       filename: urlArr[1] + '.html',
-      title: 'pages-' + urlArr[1]
+      inject: true
     }
   })
   return entrys
 }
 let pages = getEntry('./src/pages/**?/*.html')
+
 module.exports = {
+  lintOnSave: true,
+  chainWebpack: config => {
+    config.resolve.alias.set('assets', path.resolve('src/assets'))
+  },
   pages
 }

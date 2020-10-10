@@ -1,13 +1,19 @@
 <template>
   <div class="app">
-    <p>我是首页</p>
-    <router-view />
+    <index></index>
   </div>
 </template>
 
 <script>
-export default {}
+import Index from './views/index'
+
+export default {
+  name: 'App',
+  components: { Index },
+  data() {
+    return {}
+  }
+}
 </script>
-<style lang="scss" scoped>
-  
-</style>
+
+<style lang="scss" scoped></style>

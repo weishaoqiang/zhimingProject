@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
     <a href="/page1.html">page1</a>
     <a href="/page2.html" style="margin-left:20px;">page2</a>
   </div>
@@ -13,6 +13,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
